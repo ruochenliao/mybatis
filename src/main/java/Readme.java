@@ -4,7 +4,7 @@
  * 3、Mapper interface
  * 4、SQL: 注解或xml
  * 5、使用 mybatis的MapperFactoryBean
- *
+ * 6、
  *
  *
  *
