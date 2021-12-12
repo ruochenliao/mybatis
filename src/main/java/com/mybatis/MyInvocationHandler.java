@@ -15,7 +15,8 @@ public class MyInvocationHandler implements InvocationHandler {
         //连接SQL session
 
         //exe sql
-        System.out.println("exe sql");
+        System.out.println("exe sql:" + sql);
+
         return null;
     }
 }

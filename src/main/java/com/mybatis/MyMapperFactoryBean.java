@@ -8,12 +8,12 @@ public class MyMapperFactoryBean implements FactoryBean {
 
     @Override
     public Object getObject() throws Exception {
-        CityMapper cityMapper = (CityMapper) MySqlSession.getMapper(CityMapper.class);
-        return cityMapper;
+        MyCityMapper myCityMapper = (MyCityMapper) MySqlSession.getMapper(MyCityMapper.class);
+        return myCityMapper;
     }
 
     @Override
     public Class<?> getObjectType() {
-        return CityMapper.class;
+        return MyCityMapper.class;
     }
 }

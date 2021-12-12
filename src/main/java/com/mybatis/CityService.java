@@ -8,12 +8,12 @@ import javax.annotation.Resource;
 public class CityService {
 
     /**
-     * cityMapper 是对象，被 jdk 动态代理产生的实例对象
+     * myCityMapper 是对象，被 jdk 动态代理产生的实例对象
      */
     @Resource
-    private CityMapper cityMapper;
+    private MyCityMapper myCityMapper;
 
     public void query(){
-        cityMapper.query();
+        myCityMapper.query();
     }
 }

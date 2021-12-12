@@ -14,7 +14,7 @@ public class MyController {
     private CityService cityService;
 
     @GetMapping("/myTest")
-    public String myTest(){
+    public String myTest() {
         cityService.query();
         return "suceess";
     }
