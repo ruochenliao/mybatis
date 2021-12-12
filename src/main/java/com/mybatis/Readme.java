@@ -5,8 +5,7 @@ package com.mybatis;
  * 2、连接池配置
  * 3、Mapper interface
  * 4、SQL: 注解或xml
- * 5、使用 mybatis的MapperFactoryBean
- * 6、
+ * 5、使用 mybatis的MapperFactoryBean 交给 Spring IOC 容器管理
  *
  *
  *

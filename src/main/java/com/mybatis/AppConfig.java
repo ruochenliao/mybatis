@@ -12,6 +12,9 @@ import javax.sql.DataSource;
 @Configuration
 @ComponentScan("com")
 public class AppConfig {
+
+
+
     @Bean
     public DataSource dataSource(){
         //连接池: c3p0, spring jdbc, druid
