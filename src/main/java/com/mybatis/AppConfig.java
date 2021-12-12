@@ -1,3 +1,5 @@
+package com.mybatis;
+
 import com.alibaba.druid.pool.DruidDataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.boot.jdbc.DataSourceBuilder;

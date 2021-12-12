@@ -1,3 +1,5 @@
+package com.mybatis;
+
 import java.lang.reflect.Proxy;
 
 /**

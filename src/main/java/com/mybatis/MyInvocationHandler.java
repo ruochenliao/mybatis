@@ -1,3 +1,5 @@
+package com.mybatis;
+
 import org.apache.ibatis.annotations.Select;
 
 import java.lang.reflect.InvocationHandler;
