@@ -13,10 +13,8 @@ import javax.sql.DataSource;
 @ComponentScan("com")
 public class AppConfig {
 
-
-
     @Bean
-    public DataSource dataSource(){
+    public DataSource dataSource() {
         //连接池: c3p0, spring jdbc, druid
         return DataSourceBuilder.create()
                 .type(DruidDataSource.class)
@@ -24,7 +22,7 @@ public class AppConfig {
     }
 
     @Bean
-    public SqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource){
+    public SqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource) {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dataSource);
         return sqlSessionFactoryBean;
