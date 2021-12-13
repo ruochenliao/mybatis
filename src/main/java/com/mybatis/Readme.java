@@ -1,17 +1,10 @@
 package com.mybatis;
 
 /**
- * 1、sqlSessionFactory 配置
- * 2、连接池配置
- * 3、Mapper interface
- * 4、SQL: 注解或xml
- * 5、使用 mybatis的MapperFactoryBean 交给 Spring IOC 容器管理
- *
- *
- *
- *
+ * 启动后访问
+ * 1、访问 http://localhost:8080/city 即可得到正常的 mybatis
+ * 2、访问 http://localhost:8080/myCity 来模拟 mybatis
  */
-
 public class Readme {
 
 }
