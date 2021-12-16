@@ -16,12 +16,21 @@ public class MyController {
     @Resource
     private CityMapper cityMapper;
 
+    /**
+     * 模拟 mybatis
+     * @return
+     */
     @GetMapping("/myCity")
     public String myCity() {
         cityService.query();
         return "suceess";
     }
 
+    /**
+     * 正常的 mybatis
+     *
+     * @return
+     */
     @GetMapping("/city")
     public String getCity() {
         CityDTO cityDTO = cityMapper.query(1L);
