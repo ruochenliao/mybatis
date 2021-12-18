@@ -3,6 +3,8 @@ package com.mybatis;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
+
 
 /**
  * 生成 MyCityMapper 的 bean
@@ -12,9 +14,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyMapperFactoryBean implements FactoryBean {
 
+    @Resource
+    private MySqlSessionFactoryBean mySqlSession;
+
     @Override
     public Object getObject() throws Exception {
-        MySqlSession mySqlSession = new MySqlSession();
         MyCityMapper myCityMapper = mySqlSession.getMapper(MyCityMapper.class);
         return myCityMapper;
     }
