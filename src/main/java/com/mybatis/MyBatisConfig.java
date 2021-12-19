@@ -17,7 +17,8 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan(basePackages = {"com.mybatis.mapper"})
+//指定 mapper interface
+@MapperScan(basePackages = {"com.mybatis"})
 public class MyBatisConfig {
 
     @Bean
@@ -33,6 +34,7 @@ public class MyBatisConfig {
     public SqlSessionFactory sqlSessionFactory(@Autowired DataSource dataSource) throws Exception {
         SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
         factoryBean.setDataSource(dataSource);
+        //指定 mapper.xml接口
         Resource[] resources  = new PathMatchingResourcePatternResolver().getResources("classpath*:mapper/*.xml");
         factoryBean.setMapperLocations(resources);
         //mybatis 可以将 xml 的下划线转成 dto 里的字母大小，反之亦然

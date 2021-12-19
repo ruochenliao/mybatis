@@ -1,5 +1,10 @@
 package com.mybatis;
 
+/**
+ * 需要安装 mybatis 插件，才能会出现箭头
+ *
+ * @author john
+ */
 public interface CityMapper {
 
     /**
