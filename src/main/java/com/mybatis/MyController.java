@@ -1,6 +1,5 @@
 package com.mybatis;
 
-import com.mybatis.mapper.CityMapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

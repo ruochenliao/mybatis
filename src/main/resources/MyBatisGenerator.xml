@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <classPathEntry location="/Users/john/.m2/repository/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar"/>
+    <context id="productRelease">
+        <property name="mergeable" value="false" />
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/my_schema"
+                        userId="root" password="272317227" />
+        <!--- 构建 DO -->
+        <javaModelGenerator targetPackage="com.mybatis.model" targetProject="src/main/java" />
+        <!--- 构建SQL   -->
+        <sqlMapGenerator targetPackage="com.mybatis.mapper_xml" targetProject="src/main/java" />
+        <!--- 构建Mapper接口  -->
+        <javaClientGenerator targetPackage="com.mybatis.mapper" targetProject="src/main/java" type="XMLMAPPER" />
+
+        <table tableName="city" />
+    </context>
+</generatorConfiguration>
