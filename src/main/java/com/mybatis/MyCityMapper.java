@@ -20,6 +20,4 @@ public interface MyCityMapper {
 
     @Select("select * from city")
     List<Map<String, Object>> query();
-
-    CityDTO findUnique(Long id);
 }
